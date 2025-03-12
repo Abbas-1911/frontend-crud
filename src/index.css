@@ -1,0 +1,42 @@
+body {
+  background: #e0e5ec;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 400px;
+  padding: 20px;
+  background: #e0e5ec;
+  border-radius: 10px;
+  box-shadow: 8px 8px 16px #b8bcc5, -8px -8px 16px #ffffff;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+input {
+  background: #e0e5ec;
+  box-shadow: inset 6px 6px 10px #b8bcc5, inset -6px -6px 10px #ffffff;
+}
+
+button {
+  background: #e0e5ec;
+  box-shadow: 6px 6px 10px #b8bcc5, -6px -6px 10px #ffffff;
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: inset 6px 6px 10px #b8bcc5, inset -6px -6px 10px #ffffff;
+}
