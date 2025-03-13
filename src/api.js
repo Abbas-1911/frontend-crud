@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/projects";
+const API_URL = "https://backend-crud-production-4aae.up.railway.app/api";
 
 export const GET = async () => {
     const response = await fetch(API_URL);
