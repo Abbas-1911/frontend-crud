@@ -23,15 +23,16 @@ export const PUT = async (id, project) => {
     return response.json();
 };
 
-export const DELETE = async (id) => {
-    await fetch(`${API_URL}/${id}`, { method: "DELETE" });
-};
-
-export const PATCH = async (id, updatedFields) => {
+export const PATCH = async (id, updates) => {
     const response = await fetch(`${API_URL}/${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(updatedFields),
+        body: JSON.stringify(updates),
     });
     return response.json();
+};
+
+
+export const DELETE = async (id) => {
+    await fetch(`${API_URL}/${id}`, { method: "DELETE" });
 };

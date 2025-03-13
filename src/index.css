@@ -3,18 +3,30 @@ body {
   font-family: 'Arial', sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* Prevents centering everything */
   height: 100vh;
   margin: 0;
+  overflow-y: auto; /* Enables scrolling for the full page */
 }
 
 .container {
-  width: 400px;
-  padding: 20px;
+  width: 500px;
+  padding: 50px;
   background: #e0e5ec;
   border-radius: 10px;
   box-shadow: 8px 8px 16px #b8bcc5, -8px -8px 16px #ffffff;
+  margin-top: 20px; /* Prevents form from sticking to the top */
 }
+
+.project-list-container {
+  margin-top: 20px;
+  max-height: 60vh; /* Ensures list doesn't take over full screen */
+  overflow-y: auto;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  width: 550px;
+}
+
 
 input, button {
   width: 100%;
@@ -40,3 +52,4 @@ button {
 button:active {
   box-shadow: inset 6px 6px 10px #b8bcc5, inset -6px -6px 10px #ffffff;
 }
+
